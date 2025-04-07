@@ -40,7 +40,7 @@ curl -X POST \
     "billing_name": "홍길동",
     "amount": 50000
   }' \
-  http://<SERVER_DOMAIN_OR_IP>/deposit-request
+  http://13.124.248.7/deposit-request
 ```
 
 ### 응답 (Response)
@@ -154,7 +154,7 @@ curl -X POST \
   -d '{
     "order_number": "123456"
   }' \
-  http://<SERVER_DOMAIN_OR_IP>/cancel-order
+  http://13.124.248.7/cancel-order
 ```
 
 ### 응답 (Response)
@@ -206,7 +206,7 @@ payaction_response | string | Payaction API에서 온 상세 오류 내용
 예시:
 ```bash
 curl -X GET \
-  http://<SERVER_DOMAIN_OR_IP>/transaction-history/test_user
+  http://13.124.248.7/transaction-history/test_user
 ```
 
 ### 응답 (Response)
@@ -265,7 +265,7 @@ msg    | string | 오류 혹은 실패 상세 원인 안내
 예시:
 ```bash
 curl -X GET \
-  http://<SERVER_DOMAIN_OR_IP>/admin/transactions
+  http://13.124.248.7/admin/transactions
 ```
 
 ### 응답 (Response)
